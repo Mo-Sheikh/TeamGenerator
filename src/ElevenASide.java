@@ -1,10 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
 import java.util.Collections;
 import java.util.Arrays;
 public class ElevenASide {
-
+	private static final int GAME = 11;
 	
 	
 	

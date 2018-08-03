@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.Arrays;
 public class SixASide {
+	private static final int GAME = 6;
 
 	
 	

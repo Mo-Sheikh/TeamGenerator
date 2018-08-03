@@ -1,12 +1,9 @@
-import java.util.HashMap;
-
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.lang.*;
 import java.util.Collections;
 import java.util.Arrays;
 public class FiveASide {
-	public static int g = 0;
+	private static final int GAME = 5;
 	
 	
 	
@@ -15,8 +12,9 @@ public class FiveASide {
 	
 	
 	
+	
 	public static void footballers() {
-		 
+	
 	
 		for(int i = 0; i < menu.players; i++) {
 			System.out.println("enter player " + (i + 1)) ;
@@ -49,6 +47,10 @@ public class FiveASide {
 		
 		}
 		
+			for(int l = 0; l > numberOfTeams; l++) {
+				
+				System.out.println("team " + l + teamas[l]);
+			}
 		
 		System.out.println(Arrays.deepToString(teamas));
 

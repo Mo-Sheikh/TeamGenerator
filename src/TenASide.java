@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.Arrays;
 public class TenASide {
-
+	private static final int GAME = 10;
 	
 	
 	
