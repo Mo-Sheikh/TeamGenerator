@@ -22,7 +22,6 @@ public class SixASide {
 			 squad.add(i, player);
 				
 		}
-	//	System.out.println(squad);
 	}
 	
 	public static void teams() {
@@ -49,10 +48,7 @@ public class SixASide {
 		
 		
 		System.out.println(Arrays.deepToString(teamas));
-		//System.out.print(teamas);
-				
-//				{"a", "a", "a", "a", "a"}
-//				{"a", "a", "a", "a", "a"};
+
 			
 	}
 	

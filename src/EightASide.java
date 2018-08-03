@@ -49,10 +49,7 @@ public class EightASide {
 		
 		
 		System.out.println(Arrays.deepToString(teamas));
-		//System.out.print(teamas);
-				
-//				{"a", "a", "a", "a", "a"}
-//				{"a", "a", "a", "a", "a"};
+
 			
 	}
 	

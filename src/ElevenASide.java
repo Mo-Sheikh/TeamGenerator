@@ -22,7 +22,7 @@ public class ElevenASide {
 			 squad.add(i, player);
 				
 		}
-	//	System.out.println(squad);
+
 	}
 	
 	public static void teams() {
@@ -49,10 +49,7 @@ public class ElevenASide {
 		
 		
 		System.out.println(Arrays.deepToString(teamas));
-		//System.out.print(teamas);
-				
-//				{"a", "a", "a", "a", "a"}
-//				{"a", "a", "a", "a", "a"};
+
 			
 	}
 	
