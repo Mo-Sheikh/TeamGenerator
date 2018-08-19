@@ -27,9 +27,51 @@ public static void choice() {
 		System.out.println("Invalid choice - This game is not possible");
 	}
 	
-	}while(players % menu + 4 != 0);
+	}while(players % (menu + 4) != 0);
 	
-	System.out.print("\033[H\033[2J");
+	//System.out.print("\033[H\033[2J");
 
+}
+public static void chosen() {
+	
+
+	switch(menu) {
+	
+	case 1: 
+		
+		FiveASideBeta.footballersAndStats();
+		FiveASideBeta.calculation();
+		FiveASideBeta.algorithm();
+		
+		
+	break;
+	
+	case 2:
+		SixASideBeta.footballersAndStats();
+		SixASideBeta.calculation();
+		SixASideBeta.algorithm();
+	
+	break;
+	
+	case 3:
+	
+	break;
+	
+	case 4:
+	
+	break;
+		
+	case 5:
+		
+	break;
+	
+	case 6:
+	
+	break;
+	
+	case 7:
+		
+	break;
+	}
 }
 }

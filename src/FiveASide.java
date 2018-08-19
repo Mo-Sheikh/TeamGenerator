@@ -1,7 +1,8 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Collections;
-import java.util.Arrays;
+
 public class FiveASide {
 	private static final int GAME = 5;
 	
@@ -27,6 +28,7 @@ public class FiveASide {
 	
 	public static void teams() {
 		
+		
 		int numberOfTeams = menu.players / 5;
 		
 		String[][] teamas  = new String [numberOfTeams][5];
@@ -38,9 +40,6 @@ public class FiveASide {
 				for(int k = 0; k < 5; k++) {
 					teamas[j][k] = squad.get(i++);
 				
-
-			
-
 			
 		
 		}

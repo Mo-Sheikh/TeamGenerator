@@ -7,9 +7,13 @@ public class qualifier {
 	public static void advanced() {
 		
 		System.out.println("Do you want to use the advanced version of this application");
+	
 		AdvancedChoice = advanChoice.nextLine();
 		
 		if(AdvancedChoice.toLowerCase().startsWith("y") || AdvancedChoice.startsWith("o")) {
+			menuTwo.choice();
+			menuTwo.chosen();
+			
 		
 		}
 		else {
