@@ -40,8 +40,9 @@ public static void chosen() {
 	case 1: 
 		
 		FiveASideBeta.footballersAndStats();
-		FiveASideBeta.calculation();
-		FiveASideBeta.algorithm();
+//		FiveASideBeta.calculation();
+		FiveASideBeta.teamDistribution();
+		FiveASideBeta.proStats();
 		
 		
 	break;

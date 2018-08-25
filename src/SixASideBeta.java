@@ -68,6 +68,7 @@ public static void algorithm() {
 		
 	}
 		System.out.println(al);
+		System.out.println(la);
 		System.out.println("          ");
 		System.out.println(sum + " sum");
 		System.out.println(sNOT + " sNot");
