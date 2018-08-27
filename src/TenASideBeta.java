@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Collections;
 
-public class SixASideBeta {
+public class TenASideBeta {
 	public static int sum;
 	public static int numberOfTeams;
 	public static int sNOT;
