@@ -22,7 +22,6 @@ public class EightASide {
 			 squad.add(i, player);
 				
 		}
-	//	System.out.println(squad);
 	}
 	
 	public static void teams() {

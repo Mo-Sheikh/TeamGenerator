@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Collections;
 
@@ -6,8 +7,6 @@ public class NineASideBeta {
 	public static int sum;
 	public static int numberOfTeams;
 	public static int sNOT;
-	static int totes;
-	static String[][] fairTeams;
 
 	public static Scanner pd = new Scanner(System.in);
 	public static ArrayList<Integer> al = new ArrayList<Integer>();
@@ -29,22 +28,24 @@ public class NineASideBeta {
 
 	public static void calculation() {
 
-		numberOfTeams = menuTwo.players / 5;
+		numberOfTeams = menuTwo.players / 9;
 		sNOT = sum / numberOfTeams;
 
 	}
 
 	public static void teamDistribution() {
+		
+	 String fairTeams[][] = new String [numberOfTeams][9];
 
 		Collections.sort(footballers, Collections.reverseOrder());
 
-		System.out.println(footballers.toString());
+	
 
 		for (int i = 0; i < numberOfTeams; i++) {
-			for (int k = 0; k < 5; k++) {
+			for (int k = 0; k < 9; k++) {
 				fairTeams[i][k] = footballers.get(0).toString();
 				footballers.remove(0);
-				if (k < 4) {
+				if (k < 8) {
 
 					fairTeams[i][k + 1] = footballers.get((footballers.size()) - 1).toString();
 					footballers.remove(footballers.size() - 1);
@@ -52,9 +53,13 @@ public class NineASideBeta {
 				}
 
 			}
-			System.out.println(fairTeams.toString());
+			
 
 		}
+		for(int i = 0; i < numberOfTeams; i++) {
+			System.out.println("Team " + (i + 1) + " " + Arrays.deepToString(fairTeams[i]));
+		}
+		
 
 	}
 

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Collections;
 
@@ -6,8 +7,7 @@ public class FiveASideBeta {
 	public static int sum;
 	public static int numberOfTeams;
 	public static int sNOT;
-	static int totes;
-	static String[][] fairTeams;
+	
 
 	public static Scanner pd = new Scanner(System.in);
 	public static ArrayList<Integer> al = new ArrayList<Integer>();
@@ -35,10 +35,12 @@ public class FiveASideBeta {
 	}
 
 	public static void teamDistribution() {
+		
+	 String fairTeams[][] = new String [numberOfTeams][5];
 
 		Collections.sort(footballers, Collections.reverseOrder());
 
-		System.out.println(footballers.toString());
+	
 
 		for (int i = 0; i < numberOfTeams; i++) {
 			for (int k = 0; k < 5; k++) {
@@ -52,9 +54,13 @@ public class FiveASideBeta {
 				}
 
 			}
-			System.out.println(fairTeams.toString());
+			
 
 		}
+		for(int i = 0; i < numberOfTeams; i++) {
+			System.out.println("Team " + (i + 1) + " " + Arrays.deepToString(fairTeams[i]));
+		}
+		
 
 	}
 
