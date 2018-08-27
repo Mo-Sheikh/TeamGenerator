@@ -1,5 +1,5 @@
 
-public class players {
+public class players implements Comparable<players> {
 	
 	public String player;
 	public Integer rating;
@@ -29,5 +29,10 @@ public class players {
 	
 	}
 	
+	@Override
+	public int compareTo(players a) {
+		return rating.compareTo(a.rating);
+	
+	}
 
 }
