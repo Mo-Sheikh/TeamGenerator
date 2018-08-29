@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Collections;
 
 public class FiveASide {
-	private static final int GAME = 5;
+	private static int gameChoice = menu.menu + 4;
 	
 	
 	
@@ -29,29 +29,27 @@ public class FiveASide {
 	public static void teams() {
 		
 		
-		int numberOfTeams = menu.players / 5;
+		int numberOfTeams = menu.players / gameChoice;
 		
-		String[][] teamas  = new String [numberOfTeams][5];
+		String[][] teamas  = new String [numberOfTeams][gameChoice];
 		
 		Collections.shuffle(squad);
 		int i = 0;
 
 			for(int j = 0; j < numberOfTeams; j++) {
-				for(int k = 0; k < 5; k++) {
+				for(int k = 0; k < gameChoice; k++) {
 					teamas[j][k] = squad.get(i++);
 				
-			
-		
 		}
 		
 		}
 		
-			for(int l = 0; l > numberOfTeams; l++) {
+			for(int l = 0; l < numberOfTeams; l++) {
 				
-				System.out.println("team " + l + teamas[l]);
+				System.out.println("team " + (l + 1)  + Arrays.deepToString(teamas[l]));
 			}
 		
-		System.out.println(Arrays.deepToString(teamas));
+		
 
 			
 	}

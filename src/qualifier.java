@@ -12,13 +12,13 @@ public class qualifier {
 		
 		if(AdvancedChoice.toLowerCase().startsWith("y") || AdvancedChoice.startsWith("o")) {
 			menuTwo.choice();
-			menuTwo.chosen();
+		
 			
 		
 		}
 		else {
 			menu.choice();
-			menu.chosen();
+		
 		}
 			
 		

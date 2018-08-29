@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.Collections;
 
 public class FiveASideBeta {
+	private static int gameChoice = menuTwo.menu + 4;
 	public static int sum;
 	public static int numberOfTeams;
 	public static int sNOT;
@@ -29,24 +30,24 @@ public class FiveASideBeta {
 
 	public static void calculation() {
 
-		numberOfTeams = menuTwo.players / 5;
+		numberOfTeams = menuTwo.players / gameChoice;
 		sNOT = sum / numberOfTeams;
 
 	}
 
 	public static void teamDistribution() {
 		
-	 String fairTeams[][] = new String [numberOfTeams][5];
+	 String fairTeams[][] = new String [numberOfTeams][gameChoice];
 
 		Collections.sort(footballers, Collections.reverseOrder());
 
 	
 
 		for (int i = 0; i < numberOfTeams; i++) {
-			for (int k = 0; k < 5; k++) {
+			for (int k = 0; k < gameChoice; k++) {
 				fairTeams[i][k] = footballers.get(0).toString();
 				footballers.remove(0);
-				if (k < 4) {
+				if (k < (gameChoice - 1)) {
 
 					fairTeams[i][k + 1] = footballers.get((footballers.size()) - 1).toString();
 					footballers.remove(footballers.size() - 1);

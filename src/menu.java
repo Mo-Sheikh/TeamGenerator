@@ -32,49 +32,12 @@ public static void choice() {
 	}while(players % (menu + 4) != 0);
 	
 	System.out.print("\033[H\033[2J");
+	
+	FiveASide.footballers();
+	FiveASide.teams();
 
 }
 
-public static void chosen() {
-	
 
-	switch(menu) {
-	
-	case 1: 
-		FiveASide.footballers();
-		FiveASide.teams();
-	break;
-	
-	case 2:
-		SixASide.footballers();
-		SixASide.teams();
-	break;
-	
-	case 3:
-		SevenASide.footballers();
-		SevenASide.teams();
-	break;
-	
-	case 4:
-		EightASide.footballers();
-		EightASide.teams();
-	break;
-		
-	case 5:
-		NineASide.footballers();
-		NineASide.teams();
-	break;
-	
-	case 6:
-		TenASide.footballers();
-		TenASide.teams();
-	break;
-	
-	case 7:
-		ElevenASide.footballers();
-		ElevenASide.teams();
-	break;
-	}
-}
 }
 
